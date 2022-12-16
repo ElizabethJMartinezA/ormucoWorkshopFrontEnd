@@ -8,34 +8,35 @@
         <option value={{image.id}}>{{image.name}}</option>{{ line -}}
         {% endfor %}
     </select>
+
+
     <select name2 ="format" id = "format">
         <option selected disabled "">Choose network </option>option>
-        {%- for image in images %}
-        <option value={{image.id}}>{{image.name}}</option>{{ line -}}
+        {%- for flavour in flavours %}
+        <option value={{flavour.id}}>{{flavour.name}}</option>{{ line -}}
         {% endfor %}
         
-      
     </select>
 
     <select name3 ="format" id = "format">
         <option selected disabled "">Choose a flavour</option>option>
-        {%- for image in images %}
-        <option value={{image.id}}>{{image.name}}</option>{{ line -}}
+        {%- for keyPair in keyPairs %}
+        <option value={{keyPair.id}}>{{keyPair.name}}</option>{{ line -}}
         {% endfor %}
     </select>
 
     <select name4 ="format" id = "format">
         <option selected disabled "">Choose a KeyPair</option>option>
-        {%- for image in images %}
-        <option value={{image.id}}>{{image.name}}</option>{{ line -}}
+        {%- for sGropu in sGropus %}
+        <option value={{sGropu.id}}>{{sGropu.name}}</option>{{ line -}}
         {% endfor %}
        
     </select>
 
     <select name5 ="format" id = "format">
         <option selected disabled "">Choose a security Group </option>option>
-        {%- for image in images %}
-        <option value={{image.id}}>{{image.name}}</option>{{ line -}}
+        {%- for network in networks %}
+        <option value={network.id}}>{{network.name}}</option>{{ line -}}
         {% endfor %}
        
     </select>
